@@ -7,11 +7,26 @@ Te recomendamos que primero trates de resolver el ejercicio, después fijate lo 
 i podes resolverlo de ésta otra manera, deberíamos usar funciones 
 dentro de otra función, eso ya lo hicimos en funcionception , ¿Lo recordás? */
 
-function puedeJubilarse(edad, genero, aniosAporte) {
+function puedeJubilarse(edad, genero, aniosAportes) {
+  
+ 
+    if (genero === "F" && edad >= 60 && aniosAportes >= 30) {
+        
+       
+    return true;
+      } 
+     
+    else if (genero === "M" && edad >= 65 && aniosAportes >= 30) {
+        
+       
+    return true;
+      } 
+     
+    else {
+        
+       
+    return false;
+      }
+    }
     
- if (edad => 60) {
-    
- }
-}
-
-genero === "F" || "M") && tieneSuficientesAportes(aniosAporte >= 30
+    console.log(puedeJubilarse(65,"M",32))
